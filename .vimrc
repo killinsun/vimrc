@@ -32,8 +32,8 @@ set imsearch=0
 
 
 "Show infomation of last using.
-"colorscheme molokai
-"set t_Co=256
+colorscheme molokai
+set t_Co=256
 
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 set breakindent
