@@ -1,13 +1,14 @@
 " tabstop nums
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 
 "Show cursor
 set number
 set ruler
 
 " Number of (>>/<<)indent
-set shiftwidth=4
+set expandtab
+set shiftwidth=2
 " Auto indent
 set autoindent
 "Default file encoding
@@ -32,7 +33,7 @@ set imsearch=0
 
 
 "Show infomation of last using.
-colorscheme railscasts
+colorscheme molokai
 set t_Co=256
 
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
